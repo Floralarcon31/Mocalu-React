@@ -1,55 +1,39 @@
 import React from "react";
+import {Navbar, Nav, Container, Offcanvas,Row,Button}  from 'react-bootstrap';
+
 
 export default  function NavBar (){
 
     return(
         <>
-            <nav class="navbar navbar-light  fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand  navbar-center logo" href="#">Tienda Mocalú</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                        <div class="offcanvas-body">
-                            
-                            <ul class="navbar-nav justify-content-startflex-grow-1 pe-3">
-                               
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Coleccion 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Coleccion 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Tabla de talles</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Info de Envios</a>
-                                </li>
-                            </ul>
-                            <hr />
-                            <div class="offcanvas-footer">
-
-                            </div>
-                                    <button class="btnSignUp" id="signUp">
-                                        Crear cuenta
-                                    </button>
-                                    <button class="btnLogin"id="Login">
-                                        Iniciar sesión
-                                    </button>
-                        </div>
-                        </div>
-                        
-                </div>
-            </nav>
+        <Navbar className="navbar " expand={false}>
+        <Container fluid>
+          <Navbar.Brand href="#" className="logo">Tienda Mocalú</Navbar.Brand>
+          <Navbar.Toggle className="navbar-toggle" aria-controls="offcanvasNavbar" />
+          <Navbar.Offcanvas
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            placement="start"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id="offcanvasNavbarLabel">MENU</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-start flex-grow-1 pe-3">
+                <Nav.Link className="nav-link" href="#">INICIO</Nav.Link>
+                <Nav.Link className="nav-link"  href="#">COLECCION 1</Nav.Link>
+                <Nav.Link className="nav-link"  href="#">COLECCION 2</Nav.Link>
+                <Nav.Link className="nav-link"  href="#">TABLA DE TALLES</Nav.Link>
+                <Nav.Link className="nav-link"  href="#">INFO DE ENVIO</Nav.Link>
+              </Nav>
+    
+            </Offcanvas.Body>
+        
+          </Navbar.Offcanvas>
+          
+        </Container>
+      </Navbar>
         </>
     )
 }
+

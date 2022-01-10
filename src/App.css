@@ -1,5 +1,7 @@
 
-
+body{
+  background-color: seashell;
+}
 .navbar{
   
   background-color: rgb(255, 181, 255);
@@ -9,17 +11,15 @@
 .logo{
   color:white !important;
   text-decoration: none;
-}
-
-.navbar-toggler-icon{
-color: white;
-text-decoration: none;
-border: none;
-}
-.navbar-center {
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
+}
+
+.navbar-toggle{
+color: white;
+text-decoration: none;
+border: none;
 }
 
 .offcanvas-header{
@@ -27,12 +27,16 @@ border: none;
 }
 
 .offcanvas-body{
-  background-color: #ffdaf2;
+  background-color: #ffdaf2 transparent;
   
 }
 .nav-link{
   margin-top: 20px;
+  color: black !important;
+  text-decoration: none;
+  text-align: center;
 }
+/* hacer 2 botones en el off canvas
 .btnSignUp{
   color: black;
   font-size: 16px;
@@ -56,4 +60,4 @@ border: none;
   margin-left: 15px;
  
 }
-
+*/
