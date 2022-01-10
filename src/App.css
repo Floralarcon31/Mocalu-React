@@ -1,38 +1,59 @@
-.App {
+
+
+.navbar{
+  
+  background-color: rgb(255, 181, 255);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  color:white !important;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-toggler-icon{
+color: white;
+text-decoration: none;
+border: none;
+}
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.offcanvas-header{
+  background-color: #ffdaf2;
 }
 
-.App-link {
-  color: #61dafb;
+.offcanvas-body{
+  background-color: #ffdaf2;
+  
+}
+.nav-link{
+  margin-top: 20px;
+}
+.btnSignUp{
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #ffdaf2;
+  border-radius: 6px;
+  border-color: violet;
+  padding: 6px ;
+  margin-top: 160px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnLogin{
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #ffdaf2;
+  border-radius: 6px;
+  border-color: violet;
+  padding: 6px ;
+  margin-left: 15px;
+ 
 }
+
