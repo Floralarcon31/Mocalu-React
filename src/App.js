@@ -1,16 +1,23 @@
 //CSS
 import './App.css';
-//NAVBAR
-import NavBar from './components/NavBar';
+import './components/itemListContainer/itemListContainer.css'
 
+//NAVBAR
+import NavBar from './components/NavBar/NavBar';
+//ItemListContainer
+import ItemListContainer from  './components/itemListContainer/itemListContainer'
 
 
 function App() {
   //ACA SOLO JS
  
   return (
-    
+    <>
      <NavBar/>
+     <ItemListContainer  greeting="COLECCIÓN VERANO '22 "/>
+     
+    
+    </>
   );
   
 }

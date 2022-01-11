@@ -1,7 +1,9 @@
-
 body{
   background-color: seashell;
 }
+
+/*-------------NAVBAR------------------*/
+
 .navbar{
   
   background-color: rgb(255, 181, 255);
@@ -61,3 +63,19 @@ border: none;
  
 }
 */
+
+/*------------------------CARRITO--------------------*/
+
+.carritoImg{
+  display: flex;
+  background: none;
+  width: 25px;
+  height: 25px;
+  padding-right: 25px;
+  margin-right: 30px;
+  color: white;
+}
+
+.numeroCarrito{
+  margin-left: 5px;
+}
