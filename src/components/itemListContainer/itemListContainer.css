@@ -6,3 +6,19 @@
     font-size: 30px;
     margin-top: 20px;
 }
+
+/*itemCount*/
+.cardProducto{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.cardTitle{
+    text-align: center;
+    color: rgb(255, 124, 255);
+}
+
+
+
+
