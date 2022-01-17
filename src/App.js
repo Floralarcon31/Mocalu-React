@@ -6,7 +6,8 @@ import './components/itemListContainer/itemListContainer.css'
 import NavBar from './components/NavBar/NavBar';
 //ItemListContainer
 import ItemListContainer from  './components/itemListContainer/itemListContainer'
-
+//ItemCount
+import  ItemCount from './components/itemListContainer/ItemCount';
 
 function App() {
   //ACA SOLO JS
@@ -16,7 +17,7 @@ function App() {
      <NavBar/>
      <ItemListContainer  greeting="COLECCIÓN VERANO '22 "/>
      
-    
+   
     </>
   );
   
