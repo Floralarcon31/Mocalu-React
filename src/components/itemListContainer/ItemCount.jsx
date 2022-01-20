@@ -21,7 +21,7 @@ export default function ItemCount(props) {
                         <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none'}}  disabled={count >= props.stock}  onClick={() => { setCount(count + 1); }}> +  </Button>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none', color:"white" }} variant="outline-primary" >
+                        <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none', color:"white" }} variant="outline-primary"  onClick={() => props.onAdd()}>
                         Agregar al carrito
                         </Button>
                     </div>
