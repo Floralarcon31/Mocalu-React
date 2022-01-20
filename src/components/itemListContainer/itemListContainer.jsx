@@ -65,7 +65,7 @@ const ItemListContainer = (props) => {
 
     useEffect(()=>{
         Productos
-            .then(res => {
+            .then(res => { 
                 setArrayDeProductos(res)
             })
     }, [])

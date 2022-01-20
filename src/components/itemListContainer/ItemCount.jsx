@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import {Card, Button}  from 'react-bootstrap';
-import imgVestido from './vestidoRubens.png'
-
 
 export default function ItemCount(props) {
     const [count, setCount] = useState(props.stock > 0 ? 1 : props.initial);
@@ -10,7 +8,7 @@ export default function ItemCount(props) {
       <>
         
         <Card className="cardProducto" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={imgVestido} />
+            
             <Card.Body>
                 <Card.Title className="cardTitle">Vestido Rubens</Card.Title>
                  

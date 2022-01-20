@@ -8,17 +8,21 @@
 }
 
 /*itemCount*/
-.cardProducto{
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
+
 .cardTitle{
     text-align: center;
     color: rgb(255, 124, 255);
 }
 
+.CardContainer{
+    display: flex;
+    padding: 30px;
+    margin-left: 80px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-
-
+.CardItem{
+    
+}
