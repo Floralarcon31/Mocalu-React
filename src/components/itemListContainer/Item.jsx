@@ -1,6 +1,7 @@
 import react from "react";
 import ItemCount from "./ItemCount";
 import {Card, Button}  from 'react-bootstrap';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 
 export default function Item({item}){
@@ -16,9 +17,10 @@ export default function Item({item}){
                 <Card.Body>
                     <Card.Title> <p>{item.name} </p></Card.Title>
                     <Card.Text>
-                    {item.descripcion} 
+                    {item.descripcion}
+                    <button> <Link to={'/coleccion1'} >Ver Detalle</Link> </button>
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    
                     <hr />
                     <p> Stock disponible: {item.stock} </p>
                 </Card.Body>

@@ -2,42 +2,6 @@ body{
   background-color: seashell;
 }
 
-/*-------------NAVBAR------------------*/
-
-.navbar{
-  
-  background-color: rgb(255, 181, 255);
-  text-align: center;
-}
-
-.logo{
-  color:white !important;
-  text-decoration: none;
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-}
-
-.navbar-toggle{
-color: white;
-text-decoration: none;
-border: none;
-}
-
-.offcanvas-header{
-  background-color: #ffdaf2;
-}
-
-.offcanvas-body{
-  background-color: #ffdaf2 transparent;
-  
-}
-.nav-link{
-  margin-top: 20px;
-  color: black !important;
-  text-decoration: none;
-  text-align: center;
-}
 /* hacer 2 botones en el off canvas
 .btnSignUp{
   color: black;
@@ -78,4 +42,86 @@ border: none;
 
 .numeroCarrito{
   margin-left: 5px;
+}
+
+/* item detail container*/
+
+
+.contenedor {
+  max-width: 800px;
+  width: 80%;
+  margin: auto;
+  
+}
+.contenedor .contenedor__cards {
+  margin: 90px 0;
+  height: auto;
+}
+.contenedor .contenedor__cards .card {
+  height: 600px;
+  background-size: 500px 450px;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  
+}
+.contenedor .contenedor__cards .card .card__thumbnail {
+  width: 850px;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.contenedor .contenedor__cards .card .card__thumbnail .card__img {
+  width: 230px;
+  height: 400px;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contenedor .contenedor__cards .card .card__titulo {
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+.contenedor .contenedor__cards .card .card__titulo:hover {
+  color: #1c3e5f;
+}
+.contenedor .contenedor__cards .card .card__titulo .card__extracto {
+  line-height: 28px;
+  color: black;
+}
+.contenedor .contenedor__cards .card .boton {
+  background-color: #1c3e5f;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  padding: 9px 0px;
+  text-align: center;
+  width: 85px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.contenedor .contenedor__cards .card .boton .boton__texto {
+  font-weight: 600;
+}
+.contenedor .contenedor__cards .card .boton:hover {
+  background: #0a2036;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+.contenedor .contenedor__cards .card .boton--absolute {
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
 }

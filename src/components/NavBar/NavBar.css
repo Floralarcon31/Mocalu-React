@@ -1,3 +1,59 @@
 
+/*-------------NAVBAR------------------*/
 
+.navbar{
   
+    background-color: rgb(255, 181, 255);
+    text-align: center;
+   
+  }
+  
+  .logo{
+ 
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+  .LinkToBrand{
+    color:white;
+    text-decoration: none;
+  }
+  .LinkToBrand:hover{
+    color: rgb(148, 5, 117);
+}
+  
+  .navbar-toggle{
+  color: white;
+  text-decoration: none;
+  border: none;
+  }
+  
+  .offcanvas-header{
+    background-color: #ffdaf2;
+  }
+  
+  .offcanvas-body{
+    background-color: #ffdaf2 transparent;
+    
+  }
+  .nav-link{
+    margin-top: 20px;
+    text-align: center;
+  }
+    Nav .Link:hover {
+    color: rgb(148, 5, 117);
+  }
+
+ .LinkTo {
+      text-decoration: none;
+      color: black;
+  }
+
+  .LinkTo:hover{
+   
+     color: rgb(148, 5, 117);
+   
+  }
+
+ 
