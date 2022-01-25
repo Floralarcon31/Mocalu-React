@@ -90,11 +90,11 @@ body{
   font-size: 30px;
   font-weight: normal;
   text-align: center;
-  color: white;
+  color: pink;
   margin-top: 20px;
 }
 .contenedor .contenedor__cards .card .card__titulo:hover {
-  color: #1c3e5f;
+  color: #8b0960;
 }
 .contenedor .contenedor__cards .card .card__titulo .card__extracto {
   line-height: 28px;
