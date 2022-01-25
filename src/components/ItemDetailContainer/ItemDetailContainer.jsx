@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Switch, Route, useParams, Link } from 'react-router-dom';
 import ArrayDeProductos from '../../ArrayProductos.json'
@@ -18,7 +17,7 @@ export default function ItemDetailContainer() {
             {
                 "id":1,
                 "name":"Vestido Rubens",
-                "descripcion":"lorem ipsum dolor, sit amet",
+                "descripcion":"vestido rosado",
                 "precio":12950,
                 "stock":10,
                 "img":"https://cardon.com.ar/wp-content/uploads/2021/10/AC-234402004-59-725.jpg"
@@ -26,7 +25,7 @@ export default function ItemDetailContainer() {
             {
                 "id":2,
                 "name":"Vestido Chicoana",
-                "descripcion":"lorem ipsum dolor, sit amet",
+                "descripcion":"vestido rojo",
                 "precio":16170,
                 "stock":12,
                 "img":"https://cardon.com.ar/wp-content/uploads/2021/09/AC-234116007-50-235.jpg"
@@ -34,7 +33,7 @@ export default function ItemDetailContainer() {
             {
                 "id":3,
                 "name":"Vestido de las Vueltas Estampado",
-                "descripcion":"lorem ipsum dolor, sit amet",
+                "descripcion":"vestido largo azul y amarillo",
                 "precio":13436,
                 "stock":8,
                 "img":"https://cardon.com.ar/wp-content/uploads/2021/11/AC-234402005-30-738.jpg"
@@ -42,7 +41,7 @@ export default function ItemDetailContainer() {
             {
                 "id":4,
                 "name":"Vestidos Rio Iruya",
-                "descripcion":"lorem ipsum dolor, sit amet",
+                "descripcion":"vestido blanco corto",
                 "precio":5120,
                 "stock":11,
                 "img":"https://cardon.com.ar/wp-content/uploads/2021/08/CD-234215013-01-795.jpg"
@@ -50,7 +49,7 @@ export default function ItemDetailContainer() {
             {
                 "id":5,
                 "name":"Camisa Lourdes",
-                "descripcion":"lorem ipsum dolor, sit amet",
+                "descripcion":"camisa azul con detalles de colores",
                 "precio":8890,
                 "stock":5,
                 "img":"https://cardon.com.ar/wp-content/uploads/2021/12/SI-240188190-30-904.jpg"
@@ -58,22 +57,22 @@ export default function ItemDetailContainer() {
             {
                 "id":6,
                 "name":"Camisa Rio Deseado Lino",
-                "descripcion":"lorem ipsum dolor, sit amet",
+                "descripcion":"camisa blanca",
                 "precio":11880,
                 "stock":3,
                 "img":"https://cardon.com.ar/wp-content/uploads/2021/10/SI-241640012-01-2244.jpg"
             },
-        ])
+        ]);
 
-        setProducto(listadoProductos.filter(item => item.id == itemid) );
+        const Producto = listadoProductos.filter(item => item.id == itemid) ;
 
-        let myProduct = listadoProductos [0];
+        let myProduct = Producto[0];
 
         setProducto(myProduct);
 
     }, 2000);
 
-  }, [] );
+  }, [itemid] );
 
   return (
    
@@ -81,8 +80,6 @@ export default function ItemDetailContainer() {
       {itemid}
       <ItemDetail producto={producto}/>
       
-   
-
   
     </>
     );
