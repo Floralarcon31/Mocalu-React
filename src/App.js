@@ -32,7 +32,7 @@ function App() {
         {/*ruta item*/} 
         <Route  path="/producto/:itemid" >
             
-        <ItemDetailContainer /> 
+          <ItemDetailContainer /> 
 
         </Route> 
           {/*ruta categoria*/} 
@@ -43,7 +43,9 @@ function App() {
         </Route> 
 
         <Route exact path="/cart" >
+
           <ItemListContainer />
+          
         </Route> 
 
       </Switch>

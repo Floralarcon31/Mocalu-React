@@ -4,6 +4,11 @@ import ItemCount from "../itemListContainer/ItemCount";
 
 export default function ItemDeatil ({producto}){
 
+     /*funcion onAdd*/
+     function onAdd() {
+        alert( `Añadiste  el producto ${producto.name}` );
+      }
+
     return(
         <> 
         
@@ -24,7 +29,7 @@ export default function ItemDeatil ({producto}){
                                         <p> Precio Final:{producto.precio} </p>
                                         <p className="card__extracto">{producto.descripcion} </p> 
                                         
-                                        <ItemCount stock={10} initial={1} />
+                                        <ItemCount stock={producto.stock} initial={1} onAdd={onAdd}  />
                                     </div> 
                                 </div>
                                 

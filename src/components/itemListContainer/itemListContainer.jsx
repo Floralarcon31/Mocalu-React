@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
-import ItemCount from "./ItemCount"
 import ItemList from "./ItemList"
-import {  Link, useParams} from 'react-router-dom';
+import {  useParams} from 'react-router-dom';
 
 const ItemListContainer = (props) => {
     
@@ -85,10 +84,7 @@ const ItemListContainer = (props) => {
             })
     }, [categoriaId])
 
-    /*funcion onAdd*/
-      function onAdd() {
-        console.log("Item añadido");
-      }
+   
     return (
         <>
             <p className="itemListContainerP">{props.greeting}</p>
@@ -96,7 +92,6 @@ const ItemListContainer = (props) => {
 
             <p> Estoy en la categoria{categoriaId || "principal" }</p>
 
-            <ItemCount stock={10} initial={1}  onAdd={onAdd}  />
             <ItemList list={arrayDeProductos} />
            
         </>

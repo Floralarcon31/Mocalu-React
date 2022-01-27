@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route, useParams, Link } from 'react-router-dom';
-import ArrayDeProductos from '../../ArrayProductos.json'
+import {  useParams} from 'react-router-dom';
 import ItemDetail from "./ItemDetail";
 
 export default function ItemDetailContainer() {
