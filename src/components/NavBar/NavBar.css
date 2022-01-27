@@ -55,5 +55,21 @@
      color: rgb(148, 5, 117);
    
   }
+/*NAVBAR DROPDOWN*/
+  .nav-dropdown{
+    margin-top: 20px;
+    text-align: center;
+  
+  }
 
- 
+  .Nav-dropdown-title:hover{
+    color: rgb(148, 5, 117);
+  }
+  #offcanvasNavbarDropdown{
+    color: black ; 
+    text-decoration: none ;
+  }
+
+  #offcanvasNavbarDropdown:hover{
+    color: rgb(148, 5, 117);
+  }

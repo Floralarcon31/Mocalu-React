@@ -17,6 +17,7 @@ export default function ItemDetailContainer() {
             {
                 "id":1,
                 "name":"Vestido Rubens",
+                "categoria":"vestido",
                 "descripcion":"vestido rosado",
                 "precio":12950,
                 "stock":10,
@@ -25,6 +26,7 @@ export default function ItemDetailContainer() {
             {
                 "id":2,
                 "name":"Vestido Chicoana",
+                "categoria":"vestido",
                 "descripcion":"vestido rojo",
                 "precio":16170,
                 "stock":12,
@@ -33,6 +35,7 @@ export default function ItemDetailContainer() {
             {
                 "id":3,
                 "name":"Vestido de las Vueltas Estampado",
+                "categoria":"vestido",
                 "descripcion":"vestido largo azul y amarillo",
                 "precio":13436,
                 "stock":8,
@@ -41,6 +44,7 @@ export default function ItemDetailContainer() {
             {
                 "id":4,
                 "name":"Vestidos Rio Iruya",
+                "categoria":"vestido",
                 "descripcion":"vestido blanco corto",
                 "precio":5120,
                 "stock":11,
@@ -49,6 +53,7 @@ export default function ItemDetailContainer() {
             {
                 "id":5,
                 "name":"Camisa Lourdes",
+                "categoria":"camisa",
                 "descripcion":"camisa azul con detalles de colores",
                 "precio":8890,
                 "stock":5,
@@ -57,6 +62,7 @@ export default function ItemDetailContainer() {
             {
                 "id":6,
                 "name":"Camisa Rio Deseado Lino",
+                "categoria":"camisa",
                 "descripcion":"camisa blanca",
                 "precio":11880,
                 "stock":3,

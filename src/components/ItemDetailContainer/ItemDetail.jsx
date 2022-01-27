@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import ItemCount from "../itemListContainer/ItemCount";
 
-export default function ItemDeatil ({producto} ){
+export default function ItemDeatil ({producto}){
 
     return(
         <> 
@@ -16,9 +16,9 @@ export default function ItemDeatil ({producto} ){
                             <div className="contenedor__cards">  
                                 
                                 <div className="card">
-                                    <a href="#" className="card__thumbnail"> 
+                                    <div className="card__thumbnail"> 
                                     <img src={producto.img} alt="" className="card__img" />
-                                    </a>                        
+                                    </div>                        
                                     <div className="card__textos">
                                         <h2 className="card__titulo">{producto.name} </h2>
                                         <p> Precio Final:{producto.precio} </p>
@@ -34,8 +34,14 @@ export default function ItemDeatil ({producto} ){
                     :
                     <>Loading...</>
                 }
-            </div>
+
+
+
+
+    </div>
      
         </>
+
+       
     )
 }

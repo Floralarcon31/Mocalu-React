@@ -14,7 +14,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
 
-
 function App() {
   //ACA SOLO JS
  
@@ -30,31 +29,22 @@ function App() {
           <ItemListContainer  greeting="COLECCIÓN VERANO '22 "/>
  
         </Route> 
-        {/*ruta coleccion 1*/} 
-        <Route  path="/coleccion1/:itemid" >
+        {/*ruta item*/} 
+        <Route  path="/producto/:itemid" >
             
         <ItemDetailContainer /> 
 
         </Route> 
-          {/*ruta coleccion 2*/} 
-        <Route path="/coleccion2" >
+          {/*ruta categoria*/} 
+        <Route path="/categoria/:categoriaId" >
 
-          COLECCION VERANO/OTOÑO
+          <ItemListContainer />
          
-
         </Route> 
-         {/*ruta TablaDeTalles*/} 
-        <Route exact path="/TablaDeTalles" >
 
-            TABLA DE TALLES
-
+        <Route exact path="/cart" >
+          <ItemListContainer />
         </Route> 
-          {/*ruta infoEnvios*/} 
-          <Route exact path="/infoEnvios" >
-
-            INFO DE ENVIOS
-
-          </Route> 
 
       </Switch>
         

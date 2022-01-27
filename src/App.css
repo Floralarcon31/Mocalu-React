@@ -1,5 +1,7 @@
 body{
   background-color: seashell;
+  text-align: center;
+  border-radius: 0.5rem;
 }
 
 /* hacer 2 botones en el off canvas
