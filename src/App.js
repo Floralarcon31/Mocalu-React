@@ -2,7 +2,7 @@
 import './App.css';
 import './components/itemListContainer/itemListContainer.css'
 import './components/NavBar/NavBar.css'
-import React,{useState, useEffect}  from 'react'
+
 //NAVBAR
 import NavBar from './components/NavBar/NavBar';
 //ItemListContainer

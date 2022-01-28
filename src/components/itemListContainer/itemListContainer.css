@@ -8,24 +8,8 @@
   
     
 }
-/*
-.cardTitle{
-    text-align: center;
-    color: rgb(255, 124, 255);
-}
 
-.CardContainer{
-    display: flex;
-    flex-direction: column;
-    width: 17rem;
-    margin: 0.5rem;
-}
 
-.CardItem{
-    display: flex;
-    flex-wrap: wrap;
-}
-*/
 /*card del item list container */
 .ContainerCards{
     width: 90%;
@@ -37,6 +21,14 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
+
+  /*
+   display: flex;
+    flex-direction: column;
+    width: 17rem;
+    margin: 0.5rem;
+  
+  */
   }
 
 .product-card{
@@ -51,8 +43,6 @@
   flex-direction: column;
   text-decoration: none;
 
-
-  
     
   }
   
