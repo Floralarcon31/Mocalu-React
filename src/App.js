@@ -11,6 +11,8 @@ import ItemListContainer from  './components/itemListContainer/ItemListContainer
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 //React-router-dom
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+//Carrito
+import Cart from './components/Cart/Cart';
 
 
 
@@ -25,7 +27,7 @@ function App() {
       <Switch>
          {/*ruta home*/} 
         <Route exact path="/" >
-
+          
           <ItemListContainer  greeting="COLECCIÓN VERANO '22 "/>
  
         </Route> 
@@ -44,7 +46,7 @@ function App() {
 
         <Route exact path="/cart" >
 
-          <ItemListContainer />
+          <Cart /> 
           
         </Route> 
 

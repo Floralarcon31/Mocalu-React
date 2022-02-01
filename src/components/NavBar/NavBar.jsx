@@ -37,6 +37,7 @@ export default  function NavBar (){
 
                     </NavDropdown>
 
+                    <Nav.Link className="nav-link"  > <Link className="LinkTo" to={'/cart'}> Mi Carrito </Link> </Nav.Link>
                     
                   </Nav>
                 </Offcanvas.Body>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Button}  from 'react-bootstrap';
 
-export default function ItemCount(props) {
+export default function ItemCount( props,{onAdd} )  {
+    
     const [count, setCount] = useState(props.stock > 0 ? 1 : props.initial);
   
     return (
@@ -15,7 +16,7 @@ export default function ItemCount(props) {
                         <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none'}}  disabled={count >= props.stock}  onClick={() => { setCount(count + 1); }}> +  </Button>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none', color:"white" }} variant="outline-primary"  onClick={() => props.onAdd()}>
+                        <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none', color:"white" }} variant="outline-primary"  onClick={() => props.onAdd(count)}>
                         Agregar al carrito
                         </Button>
                     </div>

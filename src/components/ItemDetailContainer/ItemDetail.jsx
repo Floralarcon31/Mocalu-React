@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ItemCount from "../itemListContainer/ItemCount";
 
 export default function ItemDeatil ({producto}){
+ 
+    const [count, setCount] = useState(null);
 
+    const [mostrarItemCount, setMostrarItemCount] = useState(true);
      /*funcion onAdd*/
-     function onAdd() {
-        alert( `Añadiste  el producto ${producto.name}` );
+     function onAdd(count) {
+        setCount(count);
+       
+        setMostrarItemCount(false)
       }
 
     return(
-        <> 
-        
+        <>       
         <div>
                 {(producto.id) ?
-                    <>{
-                        
+                    <>{               
                         <div className="contenedor">
                     
                             <div className="contenedor__cards">  
@@ -28,22 +31,28 @@ export default function ItemDeatil ({producto}){
                                         <h2 className="card__titulo">{producto.name} </h2>
                                         <p> Precio Final:{producto.precio} </p>
                                         <p className="card__extracto">{producto.descripcion} </p> 
-                                        
-                                        <ItemCount stock={producto.stock} initial={1} onAdd={onAdd}  />
+
+                                        {
+                                            (mostrarItemCount)?
+
+                                            <ItemCount stock={producto.stock} initial={1} onAdd={onAdd}  />
+
+                                            : 
+                                            <div>
+                                                <button className="btn-cart">
+                                                <Link className="LinkTo"  to={'/cart'}> Ver {producto.name} ({count}) en el carro  </Link>
+                                                </button>
+                                            </div>
+                                        }                                      
                                     </div> 
-                                </div>
-                                
+                                </div>                           
                             </div>
                         </div>                       
                         }</>
                     :
                     <>Loading...</>
                 }
-
-
-
-
-    </div>
+        </div>
      
         </>
 
