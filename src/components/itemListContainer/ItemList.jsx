@@ -15,7 +15,7 @@ export default function ItemList ( props){
             <>
             {
                 props.list.map(item=>{ 
-                return <Item item={item} />})
+                return <Item key={item.id} item={item} />})
             }
         
             </>

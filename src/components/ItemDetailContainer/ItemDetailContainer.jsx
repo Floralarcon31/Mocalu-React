@@ -69,7 +69,7 @@ export default function ItemDetailContainer() {
             },
         ]);
 
-        const Producto = listadoProductos.filter(item => item.id == itemid) ;
+        const Producto = listadoProductos.filter(item => item.id == itemid) ; //CAMBIAR A FIND(?)
 
         let myProduct = Producto[0];
 

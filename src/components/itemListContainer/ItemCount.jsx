@@ -6,9 +6,7 @@ export default function ItemCount( props,{onAdd} )  {
     const [count, setCount] = useState(props.stock > 0 ? 1 : props.initial);
   
     return (
-      <>
-    
-                 
+      <>  
                 <div>
                     <div className="d-flex flex-row justify-content-between">
                         <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none'}}  disabled={count < 1}  onClick={() => { setCount(count - 1);}} > - </Button>
@@ -22,8 +20,6 @@ export default function ItemCount( props,{onAdd} )  {
                     </div>
                 </div>
 
-
-     
       </>
     );
   }

@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from 'react-router-dom';
+import { cartContext } from "../Context/CartProvider";
 import ItemCount from "../itemListContainer/ItemCount";
 
 export default function ItemDeatil ({producto}){
+
+    const{ addToCart} = useContext(cartContext);
  
     const [count, setCount] = useState(null);
 
@@ -10,7 +13,7 @@ export default function ItemDeatil ({producto}){
      /*funcion onAdd*/
      function onAdd(count) {
         setCount(count);
-       
+        addToCart(producto, count)
         setMostrarItemCount(false)
       }
 
