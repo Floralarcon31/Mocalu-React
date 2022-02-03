@@ -2,7 +2,7 @@
 import './App.css';
 import './components/itemListContainer/itemListContainer.css'
 import './components/NavBar/NavBar.css'
-
+import './components/Cart/Cart.css'
 //NAVBAR
 import NavBar from './components/NavBar/NavBar';
 //ItemListContainer
@@ -20,9 +20,9 @@ import CartProvider from './components/Context/CartProvider';
 function App() {
   return (
     <>
-
+  
        <CartProvider>
-
+      
         <BrowserRouter>
             <NavBar/>
 
