@@ -26,7 +26,7 @@ export default function Cart(){
               <div>
                 
               {cart.map(element => <CartItem key={element.item.id} prod={element} />) }
-              <button onClick={()=> clearCart() }>Limpiar todo</button>
+              <button className="btn-cart" onClick={()=> clearCart() }>Limpiar todo</button>
 
             </div>
           }
