@@ -35,11 +35,15 @@ const CartProvider = ( {children} ) => {
     const clearCart = () => {
         setCart([])
       }
-    
+      //total compra
+      const totalCompra= () =>{
+         
+        return (cart.map((item)=>item.item.precio * item.count).reduce((a,b) => a +b));
+    }
 
     return(
         <>
-        <cartContext.Provider value= {{ cart, addToCart, removeItem, clearCart }}>
+        <cartContext.Provider value= {{ cart, addToCart, removeItem, clearCart, totalCompra }}>
 
             {children}
 

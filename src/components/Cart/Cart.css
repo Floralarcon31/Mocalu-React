@@ -1,3 +1,5 @@
+/*CART*/
+
 .containerCarrito{
     text-align: center;
     display: flex;
@@ -28,11 +30,8 @@
     border: palevioletred;
     background-color: palevioletred ;
     text-decoration: none;
-   
-
  }
 
- 
  .ContinuarComprandoBtn:hover{
     background-color:  rgb(255, 15, 155);
  }
@@ -41,7 +40,6 @@
 
     color: white;
     text-decoration: none;
-
  }
 
  .ContinuarComprandoLink:hover{
@@ -63,9 +61,62 @@
 
 }
 
-
  .listaCatCart{
- 
      list-style: none;
      margin-bottom: 50px;
  }
+
+ /*CART ITEM*/
+
+ #cart-container-item table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+ }
+
+ #cart-container-item table thead{
+   font-weight: 700;
+
+}
+#cart-container-item table thead td {
+   background-color: rgb(255, 181, 255);
+   color: white;
+   border: none;
+   padding: 6px 0;
+}
+
+#cart-container-item table td {
+   border: solid 1px #b6b6b3;
+   text-align: center;
+}
+
+.card-img-item{
+   width: 80px;
+   height: 90px;
+   object-fit: cover;
+}
+
+.IconTrash{
+   color: rgb(255, 181, 255);
+}
+
+.IconTrash:hover{
+   color: rgb(255, 15, 155);
+}
+
+.removeBtn{
+   background-color: white;
+   border: none;
+}
+
+.btn-clear{
+   padding: 12px 35px;
+   border: none;
+   background-color: rgb(255, 181, 255);
+   color: white;
+   border-radius: 10px;
+  
+   
+  
+}

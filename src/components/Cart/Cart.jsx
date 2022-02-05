@@ -8,9 +8,9 @@ import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 export default function Cart(){
 
 
-    const {cart, clearCart } = useContext( cartContext );
+    const {cart, clearCart} = useContext( cartContext );
 
-    console.log(cart);
+   
 
     return(
         <>
@@ -32,15 +32,17 @@ export default function Cart(){
                   <li className="listaCatCart">
                   <Link className="CategoriaCart" to={'/categoria/vestido'} >Vestidos - </Link> <Link className="CategoriaCart"  to={'/categoria/camisa'}>Camisas</Link>
                   </li>
+
+                
                   
               </div>
 
               :
 
-              <div>
+              <div className="clear">
                 
               {cart.map(element => <CartItem key={element.item.id} prod={element} />) }
-              <button className="btn-cart" onClick={()=> clearCart() }>Limpiar todo</button>
+              <button className="btn-clear" onClick={()=> clearCart() }>Limpiar todo</button>
 
             </div>
           }
