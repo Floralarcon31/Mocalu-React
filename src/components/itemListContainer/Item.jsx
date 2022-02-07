@@ -1,8 +1,8 @@
 import React from "react";
 import {  Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import Bag from './Bag.png'
+import { faHeart, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+
 
 
 
@@ -32,8 +32,9 @@ export default function Item({item}){
                         
                         <button className="btn-cart">
                         <Link className="LinkTo" to={`/producto/${item.id}`}>
-                           Ver detalle     
-                        <img src={Bag} alt="shopping bag" className="bag-item"/>
+                           Ver detalle 
+                           <span className="bag-item"><FontAwesomeIcon  icon={faShoppingBag} /></span>
+                       
                         </Link>
                         </button>
                         

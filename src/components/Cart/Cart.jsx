@@ -8,10 +8,11 @@ import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 export default function Cart(){
 
 
-    const {cart, clearCart} = useContext( cartContext );
+    const {cart, clearCart, totalCompra} = useContext( cartContext );
+
+    
 
    
-
     return(
         <>
         
@@ -42,6 +43,7 @@ export default function Cart(){
               <div className="clear">
                 
               {cart.map(element => <CartItem key={element.item.id} prod={element} />) }
+              <p>Total a pagar {totalCompra ()} </p>
               <button className="btn-clear" onClick={()=> clearCart() }>Limpiar todo</button>
 
             </div>

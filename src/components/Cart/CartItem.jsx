@@ -5,13 +5,9 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 const CartItem = ({prod} ) => {
 
-    const {removeItem , totalCompra } = useContext(cartContext);
+    const {removeItem } = useContext(cartContext);
 
-    const [total, setTotal] = useState(0)
-
-    useEffect (() => {
-      setTotal(totalCompra())
-    },[] );
+   
 
     return (
         <>
@@ -39,7 +35,7 @@ const CartItem = ({prod} ) => {
                                 <h5>  {prod.item.precio} </h5>
                             </td>
                             <td>{prod.count}</td>
-                            <td>{total}</td>
+                            
                         </tr>
                         
                     </tbody>

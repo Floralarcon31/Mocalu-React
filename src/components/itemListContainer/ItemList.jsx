@@ -1,11 +1,24 @@
 
+import react, { useEffect,  useState} from "react";
 import Item from "./Item";
 
 
 
 export default function ItemList ( props){
 
-    console.log(props.list);
+    const[loading, setLoading] = useState(true);
+
+    useEffect(() => {
+       console.log("haciendo render");
+    }, )
+
+    useEffect(() => {
+        setTimeout( ()=>{
+            setLoading(false)
+        },1000)
+    }, [])
+
+    //console.log(props.list);
        
     return(
         <>  
@@ -21,7 +34,11 @@ export default function ItemList ( props){
             </>
            :
             <>
-                <div>Loading..</div>
+               
+                 
+
+                   {loading &&  <>loading...</>}
+               
             </>
 
 
