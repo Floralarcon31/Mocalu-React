@@ -34,8 +34,6 @@ export default function ItemList ( props){
             </>
            :
             <>
-               
-                 
 
                    {loading &&  <>loading...</>}
                

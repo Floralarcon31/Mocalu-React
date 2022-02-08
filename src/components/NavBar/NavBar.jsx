@@ -1,4 +1,4 @@
-import React from "react";
+import react from "react";
 import {Navbar, Nav, Container, Offcanvas,NavDropdown}  from 'react-bootstrap';
 import CartWidget from "../CartWidget/CartWidget";
 import {Link} from 'react-router-dom';
@@ -6,6 +6,9 @@ import {Link} from 'react-router-dom';
 
 
 export default  function NavBar (){
+
+  
+
 
 
     return(

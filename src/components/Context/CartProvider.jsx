@@ -41,9 +41,16 @@ const CartProvider = ( {children} ) => {
         return (cart.map((item)=>item.item.precio * item.count).reduce((a,b) => a +b));
     }
 
+    //function suma de los productos en el widget {
+        const totalItems = () => {
+            return cart.reduce( (element, item) => element +  item.count ,0 )
+        }
+
+  
+
     return(
         <>
-        <cartContext.Provider value= {{ cart, addToCart, removeItem, clearCart, totalCompra }}>
+        <cartContext.Provider value= {{ cart, addToCart, removeItem, clearCart, totalCompra,totalItems }}>
 
             {children}
 

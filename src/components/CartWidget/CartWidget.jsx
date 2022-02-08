@@ -1,10 +1,14 @@
-import React from 'react'
-import Cart from './shoppingBag.png'
+import React, {useContext} from 'react'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+import { cartContext } from "../Context/CartProvider";
+
 
 const CartWidget = ()=>{
+
+    const {totalItems} = useContext( cartContext );
+
     return(
         <>
         <Link to={'/cart'}  className="LinkNumCart" >
@@ -12,7 +16,7 @@ const CartWidget = ()=>{
             
                 <span><FontAwesomeIcon  icon={faShoppingBag} /></span>
             
-            <p className='numeroCarrito'>0</p>
+            <span className='numeroCarrito'>{totalItems() !== 0 ? totalItems() : ''}</span>
            
         </div>
          </Link>
