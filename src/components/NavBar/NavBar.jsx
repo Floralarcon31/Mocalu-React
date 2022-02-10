@@ -26,11 +26,8 @@ export default  function NavBar (){
                   <Nav className="justify-content-start flex-grow-1 pe-3">
                    
                     <Nav.Link className="nav-link"  > <Link className="LinkTo" to={'/'} >INICIO </Link> </Nav.Link>                          
-                    <Nav.Link className="nav-link"  > <Link className="LinkTo" to={'/producto'}> COLECCION 1</Link> </Nav.Link>
-
-                    <NavDropdown title="COLECCION 2" id="offcanvasNavbarDropdown" >
+                    <NavDropdown title="COLECCION VERANO" id="offcanvasNavbarDropdown" >
                           
-                    <NavDropdown.Item className="nav-dropdown" > <Link className="LinkTo"  to={'/categoria'}> CATEGORIAS </Link> </NavDropdown.Item>
                           <NavDropdown.Item className="nav-dropdown" > <Link className="LinkTo"  to={'/categoria/vestido'}> VESTIDOS </Link> </NavDropdown.Item>
                           <NavDropdown.Item className="nav-dropdown">  <Link className="LinkTo"  to={'/categoria/camisa'}> CAMISAS </Link></NavDropdown.Item>
                           <NavDropdown.Divider />
@@ -40,7 +37,7 @@ export default  function NavBar (){
 
                     </NavDropdown>
 
-                    <Nav.Link className="nav-link"  > <Link className="LinkTo" to={'/cart'}> Mi Carrito </Link> </Nav.Link>
+                    <Nav.Link className="nav-link"  > <Link className="LinkTo" to={'/cart'}> MI CARRITO </Link> </Nav.Link>
                     
                   </Nav>
                 </Offcanvas.Body>

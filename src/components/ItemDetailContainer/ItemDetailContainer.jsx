@@ -44,7 +44,7 @@ export default function ItemDetailContainer() {
   return (
    
     <>
-      {itemid}
+      {/*itemid*/}
       <ItemDetail producto={producto}/>
       
   

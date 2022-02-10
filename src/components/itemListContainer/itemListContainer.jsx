@@ -37,7 +37,7 @@ const ItemListContainer = (props) => {
         <>
             <p className="itemListContainerP">{props.greeting}</p>
  
-            <p> Estoy en la categoria{categoriaId || "principal" }</p>
+            {/*<p> Estoy en la categoria{categoriaId || "principal" }</p> */} 
 
             <ItemList list={arrayDeProductos} />
 
