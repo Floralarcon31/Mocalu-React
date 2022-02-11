@@ -14,6 +14,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 //Carrito    
 import Cart from './components/Cart/Cart';
 import CartProvider from './components/Context/CartProvider';
+import Orders from './components/Orders/Orders';
 
 
 
@@ -27,22 +28,22 @@ function App() {
             <NavBar/>
 
             <Switch>
-              {/*ruta home*/} 
+              
               <Route exact path="/" > <ItemListContainer  greeting="COLECCIÓN VERANO '22 "/> </Route> 
 
-              {/*ruta categoria*/} 
               <Route path="/categoria/:categoriaId" >  <ItemListContainer /> </Route> 
 
-              {/*ruta item*/} 
               <Route  path="/producto/:itemid" > <ItemDetailContainer /> </Route> 
               
-              {/*ruta carrito*/}
               <Route exact path="/cart" > <Cart />  </Route> 
+
+              <Route path="/categoria/:orders" >  <Orders /> </Route> 
 
             </Switch>
               
             {/*aca footer*/}    
           </BrowserRouter>
+          <Orders />
 
        </CartProvider>
     </>

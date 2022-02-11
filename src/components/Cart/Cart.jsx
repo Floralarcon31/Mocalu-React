@@ -9,9 +9,6 @@ export default function Cart(){
 
 
     const {cart, clearCart, totalCompra} = useContext( cartContext );
-
-    
-
    
     return(
         <>
