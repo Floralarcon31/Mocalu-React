@@ -8,7 +8,7 @@ export default function ItemCount( {stock, initial, onAdd})  {
     return (
       <>  
                 <div>
-                    <div className="d-flex flex-row justify-content-between">
+                    <div className="d-flex flex-row justify-content-between itemCount">
                         <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none'}}  disabled={count < 1}  onClick={() => { setCount(count - 1);}} > - </Button>
                         <div>{count}</div>
                         <Button style={{ backgroundColor:'rgb(255, 124, 255)', border:'none'}}  disabled={count >= stock}  onClick={() => { setCount(count + 1); }}> +  </Button>

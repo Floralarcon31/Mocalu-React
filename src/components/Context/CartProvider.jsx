@@ -36,8 +36,7 @@ const CartProvider = ( {children} ) => {
         setCart([])
       }
       //total compra
-      const totalCompra= () =>{
-         
+      const totalCompra= () =>{ 
         return (cart.map((item)=>item.item.precio * item.count).reduce((a,b) => a +b));
     }
 

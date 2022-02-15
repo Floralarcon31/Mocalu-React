@@ -4,7 +4,6 @@ import CartItem from "./CartItem";
 import { Link} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
-
 export default function Cart(){
 
 
@@ -40,10 +39,41 @@ export default function Cart(){
               <div className="clear">
                 
               {cart.map(element => <CartItem key={element.item.id} prod={element} />) }
-              <p>Total a pagar {totalCompra ()} </p>
-              <button className="btn-clear" onClick={()=> clearCart() }>Limpiar todo</button>
+
+              {/*TOTAL */}
+              <section  id='cartBottom' className='containerCartBottom'>
+                    <div className='row '>
+                        <div className="clear col-lg-6 col-md-6 col-12 mb-4"> 
+                            <div >
+                              <h5>Vaciar carro</h5>
+                              <p>Quieres vaciar el carrito?</p>
+                               <button onClick={()=> clearCart() }>Limpiar todo</button>
+                            </div>
+                        </div>
+                        
+                        <div className='totalCart col-lg-6 col-md col-12 '>
+                            <div>
+                                <h5>TOTAL</h5>
+                                    <div className='d-flex justify-content-between'>
+                                        <h6>Total</h6>
+                                        <p>$ {totalCompra ()} </p>
+                                    </div>
+                                    <Link to={'/Orders'}> 
+                                    <button className="ml-auto" >Generar orden de compra </button>
+                                    </Link>
+                               
+                            </div>
+                        </div>
+                    </div>
+                  
+                   
+                    
+            </section>
+
 
             </div>
+
+            
           }
         </>
     )

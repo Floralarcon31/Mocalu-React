@@ -35,11 +35,13 @@ const ItemListContainer = (props) => {
   }, [categoriaId])
     return (
         <>
-            <p className="itemListContainerP">{props.greeting}</p>
- 
-            {/*<p> Estoy en la categoria{categoriaId || "principal" }</p> */} 
-
+           
+           <p className="itemListContainerP">{props.greeting}</p>
+            <div className="listContainer">
             <ItemList list={arrayDeProductos} />
+            </div>
+
+            
 
         </>
         

@@ -17,7 +17,6 @@ import CartProvider from './components/Context/CartProvider';
 import Orders from './components/Orders/Orders';
 
 
-
 function App() {
   return (
     <>
@@ -37,13 +36,14 @@ function App() {
               
               <Route exact path="/cart" > <Cart />  </Route> 
 
-              <Route path="/categoria/:orders" >  <Orders /> </Route> 
+              <Route  exact path="/orders" >  <Orders /> </Route> 
 
             </Switch>
               
             {/*aca footer*/}    
           </BrowserRouter>
-          <Orders />
+  
+         
 
        </CartProvider>
     </>

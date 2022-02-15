@@ -3,17 +3,13 @@ import {  Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
-
-
-
 export default function Item({item}){
   
-    console.log(item);
+    //console.log(item);
     
-
     return(
         <> 
-        <div className="ContainerCards">
+       
 
             <div className="product-card">
                     <div className="img-product">
@@ -43,18 +39,7 @@ export default function Item({item}){
                             
                 </div>
 
-        </div>
-            
-
-
-
-
-
-                 
-                
-               
-                
-            
+       
             
         </>
     )

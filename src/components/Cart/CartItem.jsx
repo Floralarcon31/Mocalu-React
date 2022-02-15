@@ -42,10 +42,11 @@ const CartItem = ({prod} ) => {
                         
                     </tbody>
                 </table>
+
+                
             </section>
 
-
-
+          
 
 
 

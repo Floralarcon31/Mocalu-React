@@ -110,11 +110,39 @@
    border: none;
 }
 
-.btn-clear{
-   padding: 12px 35px;
+
+
+/*CART TOTAL */
+#cartBottom .clear>div,
+#cartBottom .totalCart>div{
+   margin: 10px 40px;
+   padding: 70px;
+}
+
+#cartBottom .clear h5,
+#cartBottom .totalCart h5{
+   background-color: rgb(255, 181, 255);
+   color: white;
+   border: none;
+   padding: 6px 12px;
+   font-weight: 700;
+}
+#cartBottom .clear p{
+   padding: 0 12px;
+   margin: 0 0 20px 12px;
+}
+
+#cartBottom .clear button,
+#cartBottom .totalCart button{
+   padding: 12px 15px;
    border: none;
    background-color: rgb(255, 181, 255);
    color: white;
    border-radius: 10px;
-  
+ margin: 0px 20px 10px 60px;
 }
+
+#cartBottom .totalCart div>div{
+   padding: 0 12px;
+}
+
