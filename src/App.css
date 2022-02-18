@@ -4,31 +4,6 @@ body{
   border-radius: 0.5rem;
 }
 
-.btnSignUp{
-  color: black;
-  font-size: 16px;
-  text-decoration: none;
-  background-color: #ffdaf2;
-  border-radius: 6px;
-  border-color: violet;
-  padding: 6px ;
-  margin-top: 160px;
-
-}
-
-.btnLogin{
-  color: black;
-  font-size: 16px;
-  text-decoration: none;
-  background-color: #ffdaf2;
-  border-radius: 6px;
-  border-color: violet;
-  padding: 6px ;
-  margin-left: 15px;
- 
-}
-
-
 /*------------------------CARRITO--------------------*/
 
 .carritoImg{

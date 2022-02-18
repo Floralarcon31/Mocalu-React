@@ -26,6 +26,8 @@ export default  function NavBar (){
                           
                           <NavDropdown.Item className="nav-dropdown" > <Link className="LinkTo"  to={'/categoria/vestido'}> VESTIDOS </Link> </NavDropdown.Item>
                           <NavDropdown.Item className="nav-dropdown">  <Link className="LinkTo"  to={'/categoria/camisa'}> CAMISAS </Link></NavDropdown.Item>
+                          <NavDropdown.Item className="nav-dropdown">  <Link className="LinkTo"  to={'/categoria/pantalones-shorts'}> PANTALONES Y SHORTS </Link></NavDropdown.Item>
+                          <NavDropdown.Item className="nav-dropdown">  <Link className="LinkTo"  to={'/categoria/accesorios'}> ACCESORIOS </Link></NavDropdown.Item>
                           <NavDropdown.Divider />
                           <NavDropdown.Item className="nav-dropdown">
                             WhishList
