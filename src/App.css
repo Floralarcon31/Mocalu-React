@@ -153,3 +153,47 @@ input{
   margin-top: 15px;
   text-align: center;
 }
+
+/* FOOTER */
+
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(255, 181, 255);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+ul {
+  padding-left: 0 !important;
+  list-style: none;
+}
+
+.footer-rigth {
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.redesSociales{
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+.redesSociales1{
+  width: 43px;
+  height: 43px;
+}

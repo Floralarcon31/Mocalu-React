@@ -45,9 +45,11 @@ export default function ItemDeatil ({producto}){
 
                                         : 
                                         <div>
-                                            <button className="btn-cart">
-                                            <Link className="LinkTo"  to={'/cart'}>Ver Carrito </Link>
-                                            </button>
+                                            <Link className="LinkTo"  to={'/cart'}>
+                                                <button className="btn-cart">
+                                                Ver Carrito
+                                                </button>
+                                            </Link>
                                         </div>
                                     }                                      
                                 </div> 

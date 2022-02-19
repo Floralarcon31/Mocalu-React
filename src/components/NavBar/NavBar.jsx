@@ -2,6 +2,8 @@ import react from "react";
 import {Navbar, Nav, Container, Offcanvas,NavDropdown}  from 'react-bootstrap';
 import CartWidget from "../CartWidget/CartWidget";
 import {Link} from 'react-router-dom';
+import logo from './logo.png'
+
 
 
 
@@ -11,7 +13,7 @@ export default  function NavBar (){
         <>
         <Navbar className="navbar " expand={false}>
           <Container fluid>
-            <Navbar.Brand  className="logo"> <Link className="LinkToBrand" to={'/'} >Tienda Mocalú</Link> </Navbar.Brand>
+            <Navbar.Brand  className="logo"> <Link className="LinkToBrand" to={'/'} ><img src={logo} alt="logo Tienda Mocalu" width="60" /> </Link> </Navbar.Brand>
 
             <Navbar.Toggle className="navbar-toggle" aria-controls="offcanvasNavbar" />
               <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">

@@ -9,8 +9,6 @@ export default function Item({item}){
     
     return(
         <> 
-       
-
             <div className="product-card">
                     <div className="img-product">
                         <img src={item.img} />
@@ -18,28 +16,22 @@ export default function Item({item}){
                         <div className="whishlist">
                             <span><FontAwesomeIcon  icon={faHeart} /></span>
                         </div>
-
                     </div>
 
                     <div className="info-product">
                         <h3 className="title-product">{item.name}.</h3>
                         <p className="description">{item.descripcion}.</p>
 
-                        
-                        <button className="btn-cart">
                         <Link className="LinkTo" to={`/producto/${item.id}`}>
-                           Ver detalle 
-                           <span className="bag-item"><FontAwesomeIcon  icon={faShoppingBag} /></span>
-                       
+                            <button className="btn-cart">                   
+                            Ver detalle 
+                            <span className="bag-item"><FontAwesomeIcon  icon={faShoppingBag} /></span>                     
+                            </button>
                         </Link>
-                        </button>
                         
                     </div>
-
-                            
+                         
                 </div>
-
-       
             
         </>
     )

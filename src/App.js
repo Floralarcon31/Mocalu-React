@@ -15,7 +15,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Cart from './components/Cart/Cart';
 import CartProvider from './components/Context/CartProvider';
 import Orders from './components/Orders/Orders';
-
+//Footer
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
 
             </Switch>
               
-            {/*aca footer*/}    
+            <Footer /> 
           </BrowserRouter>
   
          

@@ -20,14 +20,15 @@ export default function Cart(){
                   <h3>Tu carrito esta vacio...</h3>
                   <p>OH NO! Todavia no agregaste productos a tu carrito!</p>
                   
-
+                  <Link className="ContinuarComprandoLink" to={'/'}>
                   <button className="ContinuarComprandoBtn">
-                    <Link className="ContinuarComprandoLink" to={'/'}>Continuar comprando</Link>
+                   Continuar comprando
                   </button>
-                  
+                  </Link>
                   <p>Navegá las categorías y agregá productos a tu carrito!</p>
                   <li className="listaCatCart">
-                  <Link className="CategoriaCart" to={'/categoria/vestido'} >Vestidos - </Link> <Link className="CategoriaCart"  to={'/categoria/camisa'}>Camisas</Link>
+                  <Link className="CategoriaCart" to={'/categoria/vestido'} >Vestidos - </Link> <Link className="CategoriaCart"  to={'/categoria/camisa'}>Camisas -  </Link> 
+                  <Link className="CategoriaCart" to={'/categoria/accesorios'} > Accesorios - </Link> <Link className="CategoriaCart" to={'/categoria/pantalones-shorts'} >Pantalones y Shorts </Link> 
                   </li>
 
                 
