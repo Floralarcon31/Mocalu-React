@@ -34,10 +34,10 @@ export default function ItemDeatil ({producto}){
 
                                 <div className="itemDetailDetalle">
                                     <h2>{producto.name} </h2>
-                                    <p>{producto.categoria} </p>
-                                    <p> Precio Final: <b>$ {producto.precio} </b> </p>
+                                   {/* <p>{producto.categoria} </p> */}
+                                    
                                     <p className="itemDetailDescripcion">{producto.descripcion} </p> 
-
+                                    <p className="itemDetailPrecio"> Precio Final: <b>$ {producto.precio} </b> </p>
                                     {
                                         (mostrarItemCount)?
 

@@ -30,13 +30,13 @@ const CartItem = ({prod} ) => {
                             
                             <td> <img src={prod.item.img} alt="" className="card-img-item" /> </td>
                             <td>  
-                                <h5> {prod.item.name }</h5> 
+                                <h5 className='card-h5'> {prod.item.name }</h5> 
                             </td>
                             <td>
-                                <h5>  {prod.item.precio} </h5>
+                                <h5 className='card-h5'>  {prod.item.precio} </h5>
                             </td>
-                            <td>{prod.count}</td>
-                            <td>{prod.item.precio * prod.count} </td>
+                            <td className='card-h5'>{prod.count}</td>
+                            <td className='card-h5'>{prod.item.precio * prod.count} </td>
                             <td>  <button className='removeBtn' onClick={() => removeItem(prod.item.id) } ><FontAwesomeIcon className="IconTrash"  icon={faTrashAlt} /></button> </td>
                         </tr>
                         

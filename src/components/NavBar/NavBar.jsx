@@ -32,11 +32,13 @@ export default  function NavBar (){
                           <NavDropdown.Item className="nav-dropdown">  <Link className="LinkTo"  to={'/categoria/accesorios'}> ACCESORIOS </Link></NavDropdown.Item>
                           <NavDropdown.Divider />
                           <NavDropdown.Item className="nav-dropdown">
-                            WhishList
+                            <Link className="LinkTo"  to={'/wishlist'}>
+                              WISHLIST
+                            </Link>
                           </NavDropdown.Item>
 
                     </NavDropdown>
-
+                    <Nav.Link className="nav-link"  > <Link className="LinkTo" to={'/contacto'}> CONTACTO </Link> </Nav.Link>
                     <Nav.Link className="nav-link"  > <Link className="LinkTo" to={'/cart'}> MI CARRITO </Link> </Nav.Link>
                     
                   </Nav>

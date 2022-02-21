@@ -39,7 +39,7 @@
     position:absolute;
     bottom: 30px;
     right:20px;
-    background:#b16898;
+    background:rgb(255, 15, 155);
     width:40px;
     height:40px;
     padding:8px;
@@ -48,8 +48,8 @@
     color: white;
   }
   .product-card .img-product .whishlist:hover{
-    background-color: #b997ad;
-    color: #ff00a6;
+    background-color: white;
+    color: rgb(255, 0, 149);
   }
   
   
@@ -58,11 +58,18 @@
       margin-bottom: 60px;
     
     }
-  .product-card .info-product .title-product{
+  .product-card .info-product {
       font-size:18px;
       font-weight:700;
       color:#131313;
       margin-top: 15px;
+  }
+  .title-product{
+    color: rgb(255, 15, 155);
+    font-size:18px;
+    font-weight:700;
+    margin-top: 15px;
+    text-align: center;
   }
   .product-card .info-product .description{
       font-size:15px;
@@ -73,7 +80,7 @@
 
   
   .btn-cart{
-    background:#b997ad;
+    background:rgb(255, 15, 155);
     color:#ffffff;
     padding:10px 0px;
     margin-top:10px;
@@ -86,8 +93,8 @@
     margin-left: 18px;
   }
   .btn-cart:hover{
-    background-color:#ff00a6 ;
-    color: white;
+    background-color:rgb(255, 0, 149);
+    color: rgb(255, 181, 255);
   }
 
   .bag-item{
@@ -96,5 +103,7 @@
       margin-left: 10px;
       color: #ffffff;
   }
-
+  .bag-item:hover{
+    color: rgb(255, 181, 255);
+  }
  

@@ -15,13 +15,6 @@
     transform: translatex(-50%);
   }
 
-  .LinkToBrand{
-    color:white;
-    text-decoration: none;
-  }
-  .LinkToBrand:hover{
-    color: rgb(148, 5, 117);
-}
   
   .navbar-toggle{
   color: white;
@@ -42,17 +35,18 @@
     text-align: center;
   }
     Nav .Link:hover {
-    color: rgb(148, 5, 117);
+    color: rgb(255, 181, 255);
   }
 
  .LinkTo {
       text-decoration: none;
       color: black;
+      
   }
 
   .LinkTo:hover{
    
-     color: rgb(148, 5, 117);
+     color: rgb(255, 15, 155);
    
   }
 /*NAVBAR DROPDOWN*/
@@ -63,7 +57,7 @@
   }
  
   .Nav-dropdown-title:hover{
-    color: rgb(148, 5, 117);
+    color: rgb(255, 15, 155);
   }
   #offcanvasNavbarDropdown{
     color: black ; 
@@ -71,5 +65,31 @@
   }
 
   #offcanvasNavbarDropdown:hover{
-    color: rgb(148, 5, 117);
+    color: rgb(255, 15, 155);
   }
+
+  /* WISHLIST - PROXIMAMENTE*/
+
+  .boxTamaño {
+    display: grid;
+    grid-template-rows: 0px 400px;
+  }
+  .boxTamaño h1 {
+    text-align: center;
+    color: rgb(255, 15, 155);
+    font-size: 65px;
+    margin-top: 160px;
+  }
+
+
+  @media screen and (max-width: 576px) and (min-width: 451px) {
+    .boxTamaño h1 {
+      font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 450px) and (min-width: 330px) {
+    .boxTamaño h1 {
+      font-size: 35px;
+    }
+  }
+    /* WISHLIST - PROXIMAMENTE*/

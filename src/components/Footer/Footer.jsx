@@ -22,6 +22,7 @@ export default function Footer() {
         <p>¡Encontranos en nuestras redes!</p>
         <ul className="footer-links">
           <li>
+   
           <img src={whatsapp} alt="logo Tienda Mocalu" className='redesSociales' /> </li>
           <li>
           <img src={instagram} alt="logo Tienda Mocalu" className='redesSociales' /> </li>

@@ -12,14 +12,16 @@ export default function Item({item}){
             <div className="product-card">
                     <div className="img-product">
                         <img src={item.img} />
-                                
-                        <div className="whishlist">
-                            <span><FontAwesomeIcon  icon={faHeart} /></span>
-                        </div>
+                        <Link to={'/wishlist'}>
+                            <div className="whishlist">
+                                <span><FontAwesomeIcon  icon={faHeart} /></span>
+                            </div>
+                        </Link>
+                       
                     </div>
 
                     <div className="info-product">
-                        <h3 className="title-product">{item.name}.</h3>
+                        <h3 className="title-product">{item.name}</h3>
                         <p className="description">{item.descripcion}.</p>
 
                         <Link className="LinkTo" to={`/producto/${item.id}`}>

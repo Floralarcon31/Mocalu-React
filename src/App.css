@@ -36,18 +36,20 @@ body{
   align-items: center;
   justify-content: space-evenly;
   margin: 0 1rem;
+  border-radius: 3px;
 }
 .itemCount > button {
   background-color: antiquewhite;
-  color: brown;
+  color: white;
   width: max-content;
   align-self: center;
-  padding: 1rem;
+  padding: .9rem;
   margin: .5rem;
-  border-radius: .5rem;
+  border-radius: .4rem;
   border: none;
   text-decoration: none;
 }
+
 .itemDetailContainer{
   background-color: #ffdaf2;
   
@@ -79,11 +81,14 @@ body{
 
 .itemDetailDescripcion {
   width: 20rem;
+  color: black;
+  text-align: center;
+}
+.itemDetailPrecio{
+  color: black;
 }
 
-
 /*orders*/
-
 .containerForm{ 
   background-color: #ffdaf2;
   color: white;
@@ -118,9 +123,7 @@ input{
 .fieldForm{
   border: solid 1px #ccc;
   padding: 8px;
-  width: 385px;
- 
-  
+  width: 385px; 
 }
 
 .fieldForm:focus{
@@ -153,10 +156,42 @@ input{
   margin-top: 15px;
   text-align: center;
 }
+/*orders - RESPONSIVE*/
+@media screen and (max-width: 430px) {
+  .containerForm{ 
+  margin: 20px auto;
+  padding: 16px;
+  width: 350px;
+
+}
+
+input{
+  font-size: 14px;
+}
+
+.fieldForm{
+  padding: 7px;
+  width: 305px; 
+}
+
+
+.btnForm{
+  border-radius: 3px;
+  display: inline-block;
+  padding: 8px 13px;
+  width: 305px;
+}
+
+.titleOrder{
+  font-size: 15px;
+}
+  
+}
+
+
+/*orders*/
 
 /* FOOTER */
-
-
 .footer {
   display: flex;
   justify-content: space-evenly;
@@ -197,3 +232,32 @@ ul {
   width: 43px;
   height: 43px;
 }
+
+/* CONTACTO*/
+.contactoContainer{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contactoContainer h3{
+  font-size: 20px;
+}
+.titulo__h2{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(255, 181, 255);
+}
+.iconContacto{
+  color: rgb(255, 15, 155);
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contactoP{
+  color:black;
+  font-size:15px;
+  margin-bottom: 18px;
+
+}
+

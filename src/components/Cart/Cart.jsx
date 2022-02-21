@@ -17,7 +17,7 @@ export default function Cart(){
 
               <div className="containerCarrito">
                   <span><FontAwesomeIcon className="IconCart"  icon={faShoppingBag} /></span>
-                  <h3>Tu carrito esta vacio...</h3>
+                  <h3 className="carritoVacioTitle">Tu carrito esta vacio...</h3>
                   <p>OH NO! Todavia no agregaste productos a tu carrito!</p>
                   
                   <Link className="ContinuarComprandoLink" to={'/'}>
@@ -60,7 +60,7 @@ export default function Cart(){
                                         <p>$ {totalCompra ()} </p>
                                     </div>
                                     <Link to={'/Orders'}> 
-                                    <button className="ml-auto" >Generar orden de compra </button>
+                                    <button className="ml-auto" >Generar orden</button>
                                     </Link>
                                
                             </div>

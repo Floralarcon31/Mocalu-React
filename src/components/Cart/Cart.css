@@ -5,8 +5,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 100px;
-    border: solid 2px palevioletred;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: solid 2px rgb(214, 28, 137);
     width: 700px;
     height: 450px;
     margin-left: 330px;
@@ -14,50 +15,48 @@
   }
 
  .IconCart{
-     color: palevioletred;
+     color: rgb(255, 15, 155);
      font-size: 60px;
      margin-bottom: 20px;
      margin-top: 20px;
  } 
  .IconCart:hover{
-    color:  rgb(255, 15, 155);
+    color:  rgb(214, 28, 137);
     border:  rgb(255, 15, 155);
 } 
 
  .ContinuarComprandoBtn{
 
     padding: 10px ;
-    border: palevioletred;
-    background-color: palevioletred ;
+    border: rgb(255, 15, 155);
+    background-color: rgb(255, 15, 155) ;
     text-decoration: none;
+    border-radius: 3px;
+    color: white;
  }
 
  .ContinuarComprandoBtn:hover{
-    background-color:  rgb(255, 15, 155);
+    background-color:  rgb(214, 28, 137);
  }
 
  .ContinuarComprandoLink{
-
     color: white;
     text-decoration: none;
  }
 
  .ContinuarComprandoLink:hover{
-
     color: white;
- 
-
  }
 
  .CategoriaCart{
      display: inline-block;
      text-decoration: none;
-     color: palevioletred;
+     color: rgb(255, 15, 155);
  }
 
  .CategoriaCart:hover{
 
-    color:  rgb(255, 15, 155);
+    color:  rgb(214, 28, 137);
 
 }
 
@@ -65,14 +64,144 @@
      list-style: none;
      margin-bottom: 50px;
  }
+/*CART VACIO - RESPONSIVE*/
 
+@media screen and (max-width: 1200px) and (min-width: 950px) {
+   .containerCarrito{
+      width: 570px;
+      height: 420px;
+      margin-left: 300px;
+    
+    }
+   
+ }
+ @media screen and (max-width: 949px) and (min-width: 850px) {
+   .containerCarrito{
+      width: 530px;
+      height: 400px;
+      margin-left: 220px;
+    
+    }
+    .IconCart{
+      color: rgb(255, 15, 155);
+      font-size: 45px;
+  } 
+   .ContinuarComprandoBtn{
+      padding: 8px ;
+     font-size: 13px;
+   }
+   .carritoVacioTitle{
+      font-size: 20px;
+   }
+ }
+ @media screen and (max-width: 849px) and (min-width:770px) {
+   .containerCarrito{
+      width: 510px;
+      height: 390px;
+      margin-left: 180px;
+    
+    }
+    .IconCart{
+      color: rgb(255, 15, 155);
+      font-size: 45px;
+  } 
+   .ContinuarComprandoBtn{
+      padding: 8px ;
+     font-size: 13px;
+   }
+   .carritoVacioTitle{
+      font-size: 20px;
+   }
+    
+ }
+ @media screen and (max-width: 769px) and (min-width:650px) {
+   .containerCarrito{
+      width: 510px;
+      height: 390px;
+      margin-left: 105px;
+    
+    }
+    .IconCart{
+      color: rgb(255, 15, 155);
+      font-size: 45px;
+  } 
+   .ContinuarComprandoBtn{
+      padding: 8px ;
+     font-size: 13px;
+   }
+   .carritoVacioTitle{
+      font-size: 20px;
+   }
+    
+ }
+ @media screen and (max-width: 649px) and (min-width:575px) {
+   .containerCarrito{
+      width: 480px;
+      height: 390px;
+      margin-left: 75px;
+    
+    }
+    .IconCart{
+      color: rgb(255, 15, 155);
+      font-size: 35px;
+  } 
+   .ContinuarComprandoBtn{
+      padding: 7px ;
+     font-size: 13px;
+   }
+   .carritoVacioTitle{
+      font-size: 16px;
+   }
+    
+ }
+ @media screen and (max-width: 575px) and (min-width:475px) {
+   .containerCarrito{
+      width: 450px;
+      height: 390px;
+      margin-left: 20px;
+    
+    }
+    .IconCart{
+      color: rgb(255, 15, 155);
+      font-size: 35px;
+  } 
+   .ContinuarComprandoBtn{
+      padding: 7px ;
+     font-size: 13px;
+   }
+   .carritoVacioTitle{
+      font-size: 14px;
+   }
+    
+ }
+ @media screen and (max-width: 474px)  {
+   .containerCarrito{
+      width: 350px;
+      height: 400px;
+      margin-left: 10px;
+    
+    }
+    .IconCart{
+      color: rgb(255, 15, 155);
+      font-size: 35px;
+  } 
+   .ContinuarComprandoBtn{
+      padding: 6px ;
+     font-size: 12px;
+   }
+   .carritoVacioTitle{
+      font-size: 13px;
+   }
+   .CategoriaCart{
+      font-size: 13px;
+  }
+ }
  /*CART ITEM*/
 
  #cart-container-item table{
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
-
  }
 
  #cart-container-item table thead{
@@ -98,11 +227,11 @@
 }
 
 .IconTrash{
-   color: rgb(255, 181, 255);
+   color: rgb(255, 15, 155);
 }
 
 .IconTrash:hover{
-   color: rgb(255, 15, 155);
+   color: rgb(214, 28, 137);
 }
 
 .removeBtn{
@@ -110,7 +239,29 @@
    border: none;
 }
 
+/*CART LLENO - RESPONSIVE*/
 
+@media screen and (max-width: 470px) and (min-width: 351px) {
+   #cart-container-item table thead{
+      font-size: 13px;
+   
+   }
+   #cart-container-item table thead td {
+      padding: 4px 0;
+   }
+   .card-img-item{
+      width: 50px;
+      height: 60px;
+   }
+   .IconTrash{
+      font-size: 13px;
+   }
+   .card-h5{
+      font-size: 13px;
+   }
+   
+ }
+ 
 
 /*CART TOTAL */
 #cartBottom .clear>div,
@@ -136,13 +287,36 @@
 #cartBottom .totalCart button{
    padding: 12px 15px;
    border: none;
-   background-color: rgb(255, 181, 255);
+   background-color: rgb(255, 15, 155);
    color: white;
    border-radius: 10px;
  margin: 0px 20px 10px 60px;
+}
+#cartBottom .clear button:hover,
+#cartBottom .totalCart button:hover{
+ 
+   background-color: rgb(214, 28, 137);
+
 }
 
 #cartBottom .totalCart div>div{
    padding: 0 12px;
 }
 
+@media screen and (max-width: 429px) and (min-width: 330px) {
+   #cartBottom .clear button{
+      padding: 10px 13px;
+      font-size: 13px;
+   }
+   #cartBottom .totalCart button{
+      padding: 10px 13px;
+      font-size: 13px;      
+   }
+
+   #cartBottom .clear h5{
+      font-size: 13px;
+   }
+   #cartBottom .totalCart h5{
+   font-size: 13px;
+   }
+ }

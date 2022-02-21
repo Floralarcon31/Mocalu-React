@@ -11,12 +11,17 @@ import ItemListContainer from  './components/ItemListContainer/ItemListContainer
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 //React-router-dom
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+//
+import WishList from './components/WishList'
 //Carrito    
 import Cart from './components/Cart/Cart';
 import CartProvider from './components/Context/CartProvider';
 import Orders from './components/Orders/Orders';
 //Footer
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
+//Contacto
+import Contacto from './components/Contacto/Contacto';
+
 
 function App() {
   return (
@@ -34,6 +39,10 @@ function App() {
               <Route path="/categoria/:categoriaId" >  <ItemListContainer /> </Route> 
 
               <Route  path="/producto/:itemid" > <ItemDetailContainer /> </Route> 
+
+              <Route exact path={"/wishlist"} > <WishList /> </Route>
+
+              <Route exact path={"/contacto"}> <Contacto /> </Route>
               
               <Route exact path="/cart" > <Cart />  </Route> 
 
