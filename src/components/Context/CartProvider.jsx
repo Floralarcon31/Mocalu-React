@@ -49,7 +49,7 @@ const CartProvider = ( {children} ) => {
 
     return(
         <>
-        <cartContext.Provider value= {{ cart, addToCart, removeItem, clearCart, totalCompra,totalItems }}>
+        <cartContext.Provider value= {{ cart, addToCart, removeItem, clearCart, totalCompra,totalItems, clearCart}}>
 
             {children}
 

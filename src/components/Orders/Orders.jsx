@@ -2,10 +2,10 @@ import React, { useState,useRef, useContext } from "react";
 import { getFirestore } from '../../Firebase/Firebase'
 import { cartContext } from "../Context/CartProvider";
 import firebase from "firebase";
-import {Modal, Button}  from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 export default function Orders(){
-    const {cart, totalCompra} = useContext( cartContext );
+    const {cart, totalCompra, clearCart} = useContext( cartContext );
     const [orderId, setOrderId] = useState('');
 
     const nombreRef = useRef();
@@ -64,15 +64,36 @@ export default function Orders(){
             
                 <p>Direccion:</p>
                 <input type="text" required name="address" className="fieldForm" ref={direccionRef} placeholder="calle, numero ,piso, dpto" />
-            
-                <button type="submit" className="btnForm">
+            {
+                 orderId.length===0 ?
+                    
+                 <> <button type="submit" className="btnForm" >
+                 
+                         Enviar
+                     
+                     </button>
+                        
+                     </>
+                     :
+                     <>
+                     {orderId && (<h1 className="titleOrder" >Felicitaciones tu order es {orderId}</h1>) }
+                         <Link className="linkAlInicio"  to={'/'} onClick={()=>clearCart()} >Volver al inicio</Link>
+                     </>
+            }
+                    
+                        
+                        
+                        
+
+                        {/* <button type="submit" className="btnForm">
                     
                     Enviar
                 
                 </button>
               
                
-                {orderId && (<h1 className="titleOrder" >Felicitaciones tu order es {orderId}</h1>) }
+                {orderId && (<h1 className="titleOrder" >Felicitaciones tu order es {orderId}</h1>) } */}
+               
             </form>
         
         
