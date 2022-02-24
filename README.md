@@ -45,7 +45,6 @@ Esta orden de compra se genera a traves de FIREBASE, donde vamos a tener todos l
 ## Instalacion
 
 🚨 ATENCIÓN:
-Puedes escargar o clonar este proyecto
 Puedes descargarlo directamente desde este repositorio en el botón Code >> Download ZIP 
 
 Para poder levantar la app, primero tienes que instalar las dependencias mediante el comando:
