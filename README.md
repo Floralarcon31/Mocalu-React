@@ -1,5 +1,6 @@
 
-# Tienda Mocalú !
+# <img width="50px" alt="logo" src="https://github.com/Floralarcon31/Mocalu-React/blob/main/src/components/NavBar/logo.png" > Tienda Mocalú ! 
+
 De que se trata este proyecto?
 
 Tienda Mocalú es una e-commerce de ropa femenina, en donde el usuario podra navegar y encontrar distintas prendas, donde encontrara informacion y podra agregarla al carrito.
@@ -34,7 +35,7 @@ Esto abrirá http://localhost:3000 para ver en el navegador.
 
 Haz click aqui para ver el gif ----> ( https://www.loom.com/share/fa2f3c1d70c0481981aff4da396d5c11?sharedAppSource=personal_library ) .Lo grabe utilizando Loom.
 
-### Dependencias utilizadas hasta el momento
+## Dependencias utilizadas hasta el momento
 
  ✔️ ReactJs 
  ✔️ React-Bootstrap 
@@ -45,9 +46,11 @@ Haz click aqui para ver el gif ----> ( https://www.loom.com/share/fa2f3c1d70c048
 Puedes escargar o clonar este proyecto
 Puedes descargarlo directamente desde este repositorio en el botón Code >> Download ZIP 
 
-#### Authors
+### Authors
 Este proyecto lo realice para el curso ReactJs de CoderHouse. 
 - [@Floralarcon31
 ](https://github.com/Floralarcon31)
 
-<img align-item="center" alt="logo" src="https://github.com/Floralarcon31/Mocalu-React/blob/main/src/components/NavBar/logo.png" > 
+<p align="center">
+  <img width="200px" alt="logo" src="https://github.com/Floralarcon31/Mocalu-React/blob/main/src/components/NavBar/logo.png" />
+</p>
