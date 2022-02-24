@@ -1,5 +1,5 @@
-# Tienda Mocalú ![Logo](https://logo.png)
 
+# Tienda Mocalú !
 De que se trata este proyecto?
 
 Tienda Mocalú es una e-commerce de ropa femenina, en donde el usuario podra navegar y encontrar distintas prendas, donde encontrara informacion y podra agregarla al carrito.
@@ -49,3 +49,5 @@ Puedes descargarlo directamente desde este repositorio en el botón Code >> Down
 Este proyecto lo realice para el curso ReactJs de CoderHouse. 
 - [@Floralarcon31
 ](https://github.com/Floralarcon31)
+
+![Logo](https://github.com/Floralarcon31/Mocalu-React/blob/main/src/components/NavBar/logo.png)
