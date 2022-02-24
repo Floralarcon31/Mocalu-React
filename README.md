@@ -50,4 +50,4 @@ Este proyecto lo realice para el curso ReactJs de CoderHouse.
 - [@Floralarcon31
 ](https://github.com/Floralarcon31)
 
-![Logo](https://github.com/Floralarcon31/Mocalu-React/blob/main/src/components/NavBar/logo.png)
+<img align-item="center" alt="logo" src="https://github.com/Floralarcon31/Mocalu-React/blob/main/src/components/NavBar/logo.png" > 
