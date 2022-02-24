@@ -8,6 +8,7 @@ En cuanto a la navegabilidad el usuario podrá hacerlo a traves de la NavBar. Do
 y el carrito propiamente dicho.
 En el incio el usuario podra ver todos nuestros productos.
 El usuario puede optar por:
+
 1- Buscar el poducto en el inicio, ir a Ver detalle, donde esta la info del producto y puede agregar mas productos del mismo, hasta que el stock se acabe.
 
 <p align="center">
