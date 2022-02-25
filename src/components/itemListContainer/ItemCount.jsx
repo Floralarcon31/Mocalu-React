@@ -8,13 +8,13 @@ export default function ItemCount( {stock, initial, onAdd})  {
     return (
       <>  
                 <div>
-                    <div className="d-flex flex-row justify-content-between itemCount">
+                    <div className="itemCount">
                         <Button style={{ backgroundColor:'rgb(255, 15, 155)', border:'none'}}  disabled={count < 1}  onClick={() => { setCount(count - 1);}} > - </Button>
                         <div>{count}</div>
                         <Button style={{ backgroundColor:'rgb(255, 15, 155)', border:'none'}}  disabled={count >= stock}  onClick={() => { setCount(count + 1); }}> +  </Button>
                     </div>
-                    <div className="d-flex justify-content-center">
-                        <button className="btn-cart"  variant="outline-primary"  onClick={() => onAdd(count)}>
+                    <div>
+                        <button className="btnCart"  variant="outline-primary"  onClick={() => onAdd(count)}>
                         Agregar al carrito
                         </button>
 

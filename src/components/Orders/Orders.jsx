@@ -32,7 +32,7 @@ export default function Orders(){
             date: firebase.firestore.Timestamp.fromDate(new Date())
            
         }
-        console.log(miOrden);
+    
         orders.add(miOrden)
             .then(({ id }) => {
                 console.log('Nª de Orden: ' + id);
@@ -43,11 +43,8 @@ export default function Orders(){
             });
 
     }
-
-
-    
+  
     return (
-
         <> 
            
             <form onSubmit={handleSubmit} className="containerForm">
@@ -67,40 +64,22 @@ export default function Orders(){
             {
                  orderId.length===0 ?
                     
-                 <> <button type="submit" className="btnForm" >
-                 
-                         Enviar
-                     
-                     </button>
+                    <> 
+                    <button type="submit" className="btnForm" >
+                         Enviar         
+                    </button>
                         
                      </>
                      :
                      <>
+                     
                      {orderId && (<h1 className="titleOrder" >Felicitaciones tu order es {orderId}</h1>) }
                          <Link className="linkAlInicio"  to={'/'} onClick={()=>clearCart()} >Volver al inicio</Link>
                      </>
             }
-                    
-                        
-                        
-                        
-
-                        {/* <button type="submit" className="btnForm">
-                    
-                    Enviar
-                
-                </button>
-              
-               
-                {orderId && (<h1 className="titleOrder" >Felicitaciones tu order es {orderId}</h1>) } */}
                
             </form>
-        
-        
-
-           
-            
-           
+ 
         </>
     );
 }

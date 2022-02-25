@@ -1,12 +1,11 @@
 
-
+/*INICIO*/
 .itemListContainerP{
     text-align: center;
     color: #ffdaf2;
     font-size: 30px;
     margin-top: 20px;
 }
-
 /*card del item list container */
 
   .listContainer {
@@ -16,7 +15,7 @@
     justify-content: space-evenly;
   }
 
-.product-card{
+.productCard{
     background:#ffffff;
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
     display: flex;
@@ -28,14 +27,14 @@
     padding: 1rem 0;
   }
   
-  .product-card .img-product{
+  .productCard .imgProduct{
     position:relative;
     margin-top: 0;
     width: 280px;
     height: 340px;
   }
-  .product-card .img-product img{width:100%;}
-  .product-card .img-product .whishlist{
+  .productCard .imgProduct img{width:100%;}
+  .productCard .imgProduct .whishlist{
     position:absolute;
     bottom: 30px;
     right:20px;
@@ -47,39 +46,36 @@
     text-align: center;
     color: white;
   }
-  .product-card .img-product .whishlist:hover{
+  .productCard .imgProduct .whishlist:hover{
     background-color: white;
     color: rgb(255, 0, 149);
   }
-  
-  
-  .product-card .info-product{
+  .productCard .infoProduct{
       padding:0px 25px;
       margin-bottom: 60px;
     
     }
-  .product-card .info-product {
+  .productCard .infoProduct {
       font-size:18px;
       font-weight:700;
       color:#131313;
       margin-top: 15px;
   }
-  .title-product{
+  .titleProduct{
     color: rgb(255, 15, 155);
     font-size:18px;
     font-weight:700;
     margin-top: 15px;
     text-align: center;
   }
-  .product-card .info-product .description{
+  .productCard .infoProduct .description{
       font-size:15px;
       font-weight:400;
       margin-bottom: 30px;
       color:#414141;
   }
-
-  
-  .btn-cart{
+ 
+  .btnCart{
     background:rgb(255, 15, 155);
     color:#ffffff;
     padding:10px 0px;
@@ -92,18 +88,18 @@
     padding: 10px 40px;
     margin-left: 18px;
   }
-  .btn-cart:hover{
+  .btnCart:hover{
     background-color:rgb(255, 0, 149);
     color: rgb(255, 181, 255);
   }
 
-  .bag-item{
+  .bagItem{
       width: 25px;
       height: 25px;
       margin-left: 10px;
       color: #ffffff;
   }
-  .bag-item:hover{
+  .bagItem:hover{
     color: rgb(255, 181, 255);
   }
  

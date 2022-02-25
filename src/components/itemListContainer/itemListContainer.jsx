@@ -23,7 +23,6 @@ const ItemListContainer = (props) => {
               return
             }
             console.log('hay documentos');   
-            //console.log(querySnapShot.docs);
             setArrayDeProductos(querySnapShot.docs.map((doc)=> {
                 return { id: doc.id, ...doc.data() }
             }
@@ -39,9 +38,7 @@ const ItemListContainer = (props) => {
            <p className="itemListContainerP">{props.greeting}</p>
             <div className="listContainer">
             <ItemList list={arrayDeProductos} />
-            </div>
-
-            
+            </div>         
 
         </>
         

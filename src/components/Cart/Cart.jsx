@@ -4,14 +4,12 @@ import CartItem from "./CartItem";
 import { Link} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+
 export default function Cart(){
-
-
     const {cart, clearCart, totalCompra} = useContext( cartContext );
    
     return(
-        <>
-        
+        <> 
           {
               cart.length === 0 ?
 
@@ -30,9 +28,7 @@ export default function Cart(){
                   <Link className="CategoriaCart" to={'/categoria/vestido'} >Vestidos - </Link> <Link className="CategoriaCart"  to={'/categoria/camisa'}>Camisas -  </Link> 
                   <Link className="CategoriaCart" to={'/categoria/accesorios'} > Accesorios - </Link> <Link className="CategoriaCart" to={'/categoria/pantalones-shorts'} >Pantalones y Shorts </Link> 
                   </li>
-
-                
-                  
+               
               </div>
 
               :
@@ -41,8 +37,7 @@ export default function Cart(){
                 
               {cart.map(element => <CartItem key={element.item.id} prod={element} />) }
 
-              {/*TOTAL */}
-              <section  id='cartBottom' className='containerCartBottom'>
+            <section  id='cartBottom' className='containerCartBottom'>
                     <div className='row '>
                         <div className="clear col-lg-6 col-md-6 col-12 mb-4"> 
                             <div >
@@ -65,16 +60,9 @@ export default function Cart(){
                                
                             </div>
                         </div>
-                    </div>
-                  
-                   
-                    
+                    </div>                  
             </section>
-
-
-            </div>
-
-            
+            </div>            
           }
         </>
     )

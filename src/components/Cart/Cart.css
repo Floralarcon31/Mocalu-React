@@ -1,17 +1,16 @@
 /*CART*/
 
 .containerCarrito{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    border: solid 2px rgb(214, 28, 137);
-    width: 700px;
-    height: 450px;
-    margin-left: 330px;
-  
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-top: 80px;
+   margin-bottom: 80px;
+   border: solid 2px rgb(214, 28, 137);
+   width: 700px;
+   height: 450px;
+   margin-left: 330px;
   }
 
  .IconCart{
@@ -24,9 +23,7 @@
     color:  rgb(214, 28, 137);
     border:  rgb(255, 15, 155);
 } 
-
  .ContinuarComprandoBtn{
-
     padding: 10px ;
     border: rgb(255, 15, 155);
     background-color: rgb(255, 15, 155) ;
@@ -73,7 +70,6 @@
       margin-left: 300px;
     
     }
-   
  }
  @media screen and (max-width: 949px) and (min-width: 850px) {
    .containerCarrito{
@@ -198,39 +194,39 @@
  }
  /*CART ITEM*/
 
- #cart-container-item table{
+ #cartContainerItem table{
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
  }
 
- #cart-container-item table thead{
+ #cartContainerItem table thead{
    font-weight: 700;
 
 }
-#cart-container-item table thead td {
+#cartContainerItem table thead td {
    background-color: rgb(255, 181, 255);
    color: white;
    border: none;
    padding: 6px 0;
 }
 
-#cart-container-item table td {
+#cartContainerItem table td {
    border: solid 1px #b6b6b3;
    text-align: center;
 }
 
-.card-img-item{
+.cardImgItem{
    width: 80px;
    height: 90px;
    object-fit: cover;
 }
 
-.IconTrash{
+.iconTrash{
    color: rgb(255, 15, 155);
 }
 
-.IconTrash:hover{
+.iconTrash:hover{
    color: rgb(214, 28, 137);
 }
 
@@ -242,34 +238,32 @@
 /*CART LLENO - RESPONSIVE*/
 
 @media screen and (max-width: 470px) and (min-width: 351px) {
-   #cart-container-item table thead{
+   #cartContainerItem table thead{
       font-size: 13px;
    
    }
-   #cart-container-item table thead td {
+   #cartContainerItem table thead td {
       padding: 4px 0;
    }
-   .card-img-item{
+   .cardImgItem{
       width: 50px;
       height: 60px;
    }
-   .IconTrash{
+   .iconTrash{
       font-size: 13px;
    }
-   .card-h5{
+   .cardH5{
       font-size: 13px;
    }
    
  }
  
-
 /*CART TOTAL */
 #cartBottom .clear>div,
 #cartBottom .totalCart>div{
    margin: 10px 40px;
    padding: 70px;
 }
-
 #cartBottom .clear h5,
 #cartBottom .totalCart h5{
    background-color: rgb(255, 181, 255);
@@ -294,15 +288,12 @@
 }
 #cartBottom .clear button:hover,
 #cartBottom .totalCart button:hover{
- 
    background-color: rgb(214, 28, 137);
-
 }
 
 #cartBottom .totalCart div>div{
    padding: 0 12px;
 }
-
 @media screen and (max-width: 429px) and (min-width: 330px) {
    #cartBottom .clear button{
       padding: 10px 13px;
@@ -312,7 +303,6 @@
       padding: 10px 13px;
       font-size: 13px;      
    }
-
    #cartBottom .clear h5{
       font-size: 13px;
    }

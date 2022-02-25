@@ -11,7 +11,7 @@ import ItemListContainer from  './components/ItemListContainer/ItemListContainer
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 //React-router-dom
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-//
+//WishList
 import WishList from './components/WishList'
 //Carrito    
 import Cart from './components/Cart/Cart';
@@ -26,12 +26,9 @@ import Contacto from './components/Contacto/Contacto';
 function App() {
   return (
     <>
-  
-       <CartProvider>
-      
+       <CartProvider>   
         <BrowserRouter>
             <NavBar/>
-
             <Switch>
               
               <Route exact path="/" > <ItemListContainer  greeting="COLECCIÓN VERANO '22 "/> </Route> 
@@ -48,13 +45,9 @@ function App() {
 
               <Route  exact path="/orders" >  <Orders /> </Route> 
 
-            </Switch>
-              
+            </Switch>              
             <Footer /> 
           </BrowserRouter>
-  
-         
-
        </CartProvider>
     </>
   );

@@ -10,7 +10,7 @@ export default function ItemDeatil ({producto}){
     const [count, setCount] = useState(null);
 
     const [mostrarItemCount, setMostrarItemCount] = useState(true);
-     /*funcion onAdd*/
+
      function onAdd(count) {
         setCount(count);
         alert(`Agregaste ${count} ${producto.name}`)
@@ -34,7 +34,6 @@ export default function ItemDeatil ({producto}){
 
                                 <div className="itemDetailDetalle">
                                     <h2>{producto.name} </h2>
-                                   {/* <p>{producto.categoria} </p> */}
                                     
                                     <p className="itemDetailDescripcion">{producto.descripcion} </p> 
                                     <p className="itemDetailPrecio"> Precio Final: <b>$ {producto.precio} </b> </p>
@@ -46,7 +45,7 @@ export default function ItemDeatil ({producto}){
                                         : 
                                         <div>
                                             <Link className="LinkTo"  to={'/cart'}>
-                                                <button className="btn-cart">
+                                                <button className="btnCart">
                                                 Ver Carrito
                                                 </button>
                                             </Link>

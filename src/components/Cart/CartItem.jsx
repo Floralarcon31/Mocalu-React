@@ -1,4 +1,4 @@
-import	React, { useContext,useEffect, useState } from 'react';
+import	React, { useContext } from 'react';
 import { cartContext } from '../Context/CartProvider';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
@@ -7,16 +7,12 @@ const CartItem = ({prod} ) => {
 
     const {removeItem } = useContext(cartContext);
 
-   
-
     return (
         <>
-
-            <section id='cart-container-item' className='container my-5'>
+            <section id='cartContainerItem' className='container my-5'>
                 <table className='tableCart'>
                     <thead>
-                        <tr>
-                            
+                        <tr>                 
                             <td>Imagen</td>
                             <td>Poducto</td>
                             <td>Precio</td>
@@ -28,16 +24,16 @@ const CartItem = ({prod} ) => {
                     <tbody>
                         <tr>
                             
-                            <td> <img src={prod.item.img} alt="" className="card-img-item" /> </td>
+                            <td> <img src={prod.item.img} alt="" className="cardImgItem" /> </td>
                             <td>  
-                                <h5 className='card-h5'> {prod.item.name }</h5> 
+                                <h5 className='cardH5'> {prod.item.name }</h5> 
                             </td>
                             <td>
-                                <h5 className='card-h5'>  {prod.item.precio} </h5>
+                                <h5 className='cardH5'>  {prod.item.precio} </h5>
                             </td>
-                            <td className='card-h5'>{prod.count}</td>
-                            <td className='card-h5'>{prod.item.precio * prod.count} </td>
-                            <td>  <button className='removeBtn' onClick={() => removeItem(prod.item.id) } ><FontAwesomeIcon className="IconTrash"  icon={faTrashAlt} /></button> </td>
+                            <td className='cardH5'>{prod.count}</td>
+                            <td className='cardH5'>{prod.item.precio * prod.count} </td>
+                            <td>  <button className='removeBtn' onClick={() => removeItem(prod.item.id) } ><FontAwesomeIcon className="iconTrash"  icon={faTrashAlt} /></button> </td>
                         </tr>
                         
                     </tbody>

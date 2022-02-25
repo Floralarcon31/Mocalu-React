@@ -5,13 +5,11 @@ import { faPhone, faMobile, faEnvelope, faMapPin } from "@fortawesome/free-solid
 export default function Contacto(){
      
     return(
-        <>  
-           
-            <div className="content-contacto">
-              <h2 className="titulo__h2">CONTACTANOS</h2>   
+        <>          
+            <div>
+              <h2 className="tituloH2">CONTACTANOS</h2>   
 
                 <div className="contactoContainer">
-
                 <div >
                 <span><FontAwesomeIcon  icon={faPhone}  className="iconContacto" /></span>
                 <h3> TELEFONO: </h3>
@@ -37,12 +35,7 @@ export default function Contacto(){
                 </div>
 
                 </div>
-                
-                              
- 
-
-
-                
+                               
             </div>
                 
         </>

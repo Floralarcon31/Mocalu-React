@@ -1,22 +1,17 @@
 
 /*-------------NAVBAR------------------*/
-
 .navbar{
-  
     background-color: rgb(255, 181, 255);
     text-align: center;
-   
   }
   
-  .logo{
-   
+  .logo{  
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
   }
 
-  
-  .navbar-toggle{
+  .navbarToggle{
   color: white;
   text-decoration: none;
   border: none;
@@ -30,7 +25,7 @@
     background-color: #ffdaf2 transparent;
     
   }
-  .nav-link{
+  .navLink{
     margin-top: 20px;
     text-align: center;
   }
@@ -50,7 +45,7 @@
    
   }
 /*NAVBAR DROPDOWN*/
-  .nav-dropdown{
+  .navDropdown{
     margin-top: 20px;
     text-align: center;
   

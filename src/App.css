@@ -26,11 +26,12 @@ body{
   text-decoration: none;
 }
 
-.LinkNumCart{
+.linkNumCart{
     text-decoration: none;
 }
 
 /* item detail container*/
+/*ITEM COUNT*/
 .itemCount {
   display: flex;
   align-items: center;
@@ -49,7 +50,6 @@ body{
   border: none;
   text-decoration: none;
 }
-
 .itemDetailContainer{
   background-color: #ffdaf2;
   
@@ -204,7 +204,7 @@ input{
   margin-top: 1rem;
 }
 
-.footer-left {
+.footerLeft {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,11 +216,11 @@ ul {
   list-style: none;
 }
 
-.footer-rigth {
+.footerRight {
   color: white;
 }
 
-.footer-links {
+.footerLinks {
   display: flex;
   justify-content: space-evenly;
 }
@@ -244,7 +244,7 @@ ul {
 .contactoContainer h3{
   font-size: 20px;
 }
-.titulo__h2{
+.tituloH2{
   font-size: 35px;
   text-align: center;
   margin-top: 20px;

@@ -2,8 +2,6 @@
 import react, { useEffect,  useState} from "react";
 import Item from "./Item";
 
-
-
 export default function ItemList ( props){
 
     const[loading, setLoading] = useState(true);
@@ -18,8 +16,6 @@ export default function ItemList ( props){
         },1000)
     }, [])
 
-    //console.log(props.list);
-       
     return(
         <>  
         

@@ -4,30 +4,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
 export default function Item({item}){
-  
-    //console.log(item);
-    
+
     return(
         <> 
-            <div className="product-card">
-                    <div className="img-product">
+            <div className="productCard">
+                    <div className="imgProduct">
                         <img src={item.img} />
                         <Link to={'/wishlist'}>
                             <div className="whishlist">
                                 <span><FontAwesomeIcon  icon={faHeart} /></span>
                             </div>
-                        </Link>
-                       
+                        </Link>                   
                     </div>
 
-                    <div className="info-product">
-                        <h3 className="title-product">{item.name}</h3>
+                    <div className="infoProduct">
+                        <h3 className="titleProduct">{item.name}</h3>
                         <p className="description">{item.descripcion}.</p>
 
                         <Link className="LinkTo" to={`/producto/${item.id}`}>
-                            <button className="btn-cart">                   
+                            <button className="btnCart">                   
                             Ver detalle 
-                            <span className="bag-item"><FontAwesomeIcon  icon={faShoppingBag} /></span>                     
+                            <span className="bagItem"><FontAwesomeIcon  icon={faShoppingBag} /></span>                     
                             </button>
                         </Link>
                         
