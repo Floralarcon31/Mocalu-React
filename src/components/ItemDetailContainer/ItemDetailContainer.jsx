@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {  useParams} from 'react-router-dom';
 import ItemDetail from "./ItemDetail";
-import { getFirestore } from '../../Firebase/Firebase'
+import { getFirestore } from '../../Firebase/FB'
 
 export default function ItemDetailContainer() {
 
