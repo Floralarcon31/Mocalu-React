@@ -13,11 +13,11 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 //WishList
 import WishList from './components/WishList'
-//Carrito    
+//CARRITO  
 import Cart from './components/Cart/Cart';
 import CartProvider from './components/Context/CartProvider';
 import Orders from './components/Orders/Orders';
-//Footer
+//FOOTER
 import Footer from './components/Footer/Footer';
 //Contacto
 import Contacto from './components/Contacto/Contacto';
