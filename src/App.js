@@ -1,12 +1,12 @@
 //CSS
 import './App.css';
-import './components/ILC/ItemListContainer.css'
+import './components/ItemListContainer/ItemListContainer.css'
 import './components/NavBar/NavBar.css'
 import './components/Cart/Cart.css'
 //NAVBAR
 import NavBar from './components/NavBar/NavBar';
 //ItemListContainer
-import ItemListContainer from  './components/ILC/ItemListContainer'
+import ItemListContainer from  './components/ItemListContainer/ItemListContainer'
 //ItemDetailContainer
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 //React-router-dom

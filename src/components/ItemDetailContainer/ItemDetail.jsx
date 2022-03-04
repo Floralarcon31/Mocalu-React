@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link } from 'react-router-dom';
 import { cartContext } from "../Context/CartProvider";
-import ItemCount from "../ILC/ItemCount";
+import ItemCount from "../ItemListContainer/ItemCount";
 
 export default function ItemDeatil ({producto}){
 
